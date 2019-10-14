@@ -1,0 +1,20 @@
+stages:
+  - testStage
+  - job    
+
+putkentesti:
+  stage: testStage
+  script:
+    - echo "putki toimii!"
+    - cat hello.sh
+    - export
+  tags: 
+    - general
+
+job:
+  stage: job
+  script: 
+    - echo "Hello"
+  tags: 
+    - general
+
